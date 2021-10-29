@@ -1,7 +1,8 @@
 body {
-  font-family: fantasy;
-  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
+  font-size: 16px;
+  font-weight: bold;
   background-image: url("../Images/pexels-taryn-elliott-5182568.jpg");
   background-size: contain;
 }
@@ -21,6 +22,8 @@ textarea{
 }
 
 .jumbotron {
+  font-family: fantasy;
+  font-size: 25px;
   text-align: center;
   background-color: transparent;
   color: #88d498;
@@ -75,4 +78,21 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .jumbotron {
+    font-size: 20px;
+    color: #88d498;
+  }
+  .lead {
+    font-size: 18px;
+    margin: 18px 0;
+    font-weight: lighter;
+  }
 }
